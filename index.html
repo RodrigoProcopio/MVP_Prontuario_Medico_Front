@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles.css"> <!-- Importa o arquivo de estilo CSS -->
+
+    <title>MVP Prontuário</title>
+</head>
+
+<body style="background-image: url(./img/background.jpg)">
+
+     <!-- Cabeçalho de informações do sistema -->
+    <header>
+        <div class="title">
+            <h2>Prontuário Médico</h2> <!-- Título do cabeçalho -->
+        </div>
+    </header>
+
+    <!-- Botões de interação -->
+    <section class="intButtons">
+        <button id="toggleListButton" class="Btn" onclick="toggleList()">Exibir Lista</button>
+        <button id="toggleSearchButton" class="Btn" onclick="toggleSearchBox()">Pesquisar Medicamento</button>
+        <button id="insertMedicineButton" class="Btn" onclick="toggleInsertMedicine()">Inserir Medicamento</button>
+    </section>
+
+    <section class="srchItem">
+        <div id="searchBox" style="display: none;">
+            <input type="text" id="srchMedicine" placeholder="Buscar medicamento">
+            <button onclick="searchMedicine()" class="Btn">Buscar</button>
+        </div>
+    </section>
+    
+    <!-- Opções para adicionar um novo item -->
+    <section class="newItem">
+        <input type="text" id="newMedicine" placeholder="Medicamento">
+        <input type="text" id="newPosology" placeholder="Posologia">
+        <input type="text" id="newDoctor" placeholder="Medico(a)">
+        <input type="text" id="newSpecialty" placeholder="Especialidade">
+        <button onclick="newItem()" class="Btn">Inserir</button>
+    </section>
+        
+    <!--Tabela com itens existentes -->
+    <section class="items">
+        <table id="myTable">
+             <tr>
+                 <th>Medicamento</th>
+                 <th>Posologia</th>
+                 <th>Médico(a)</th>
+                 <th>Especialidade</th>
+                 <th>Excluir</th>
+             </tr>
+             <!-- Linhas da tabela quando houver -->
+        </table>
+    </section>
+
+    <script src="scripts.js"></script> <!-- Importa o arquivo de script JavaScript -->
+    <footer>
+        <!-- Botão "Voltar ao Topo" -->
+        <div id="buttonContainer">
+            <button id="backToTopButton" class="Btn" onclick="scrollToTop()">Voltar ao Topo</button>
+        </div>
+    
+        <!-- Informações de direitos autorais e redes sociais -->
+        <div class="copyright">
+            &copy; 2023 Rodrigo Procópio. Todos os direitos reservados. <!-- Informações de direitos autorais -->
+        </div>
+        <div class="social-media">
+            Siga-me nas redes sociais:
+            <a href="https://www.linkedin.com/in/rodrigoprocopio/" target="_blank">LinkedIn</a> <!-- Link para o LinkedIn -->
+            Visite meu GitHub:
+            <a href="https://github.com/RodrigoProcopio" target="_blank">GitHub</a> <!-- Link para o GitHub -->
+        </div>
+    </footer>
+</body>
+</html>

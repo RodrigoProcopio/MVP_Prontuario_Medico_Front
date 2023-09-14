@@ -1,0 +1,160 @@
+/* Reset CSS para lidar com as diferenças de estilos padrão dos navegadores */
+body, ul, li {
+    font-family: tahoma; 
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo geral do corpo da página */
+body {
+    background-color: rgb(23, 118, 133); 
+    font-size: 32px; 
+}
+
+/* Estilo do cabeçalho */
+header {
+    text-align: center;
+    position: relative;
+    width: 100%;
+    padding: 0px 0;
+}
+
+.title {
+    color: rgb(51, 51, 51); 
+    display: inline-block;
+}
+
+/* Estilo das seções */
+.intButtons, .srchItem {
+    padding: 30px;
+    color: white; 
+    text-align: center;
+}
+
+.newItem  {
+    display: none; /* Oculta a seção de novo item por padrão */
+    padding: 30px;
+    color: white;
+    text-align: center;
+}
+
+/* Estilo dos campos de entrada de texto */
+input[type="text"] {
+    margin: 0;
+    border: 1px solid rgb(4, 105, 108); 
+    width: 15%;
+    padding: 10px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.searchBox input[type="text"] {
+    margin: 0;
+    border: 1px solid rgb(4, 105, 108);
+    width: 15%;
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+}
+
+/* Estilo dos botões */
+.Btn {
+    padding: 9px 10px;
+    background-color: rgb(4, 105, 108); 
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 2px;
+    margin-right: 10px; 
+}
+
+.Btn:hover {
+    background-color: #15a526; /* Cor de fundo ao passar o mouse */
+}
+
+/* Estilo da tabela */
+table {
+    border: 1px solid rgb(4, 105, 108);
+    border-collapse: collapse;
+    font-size: 12px;
+    transition: 0.2s;
+    text-align: center;
+    font-family: tahoma;
+    background-color: white;
+    margin: 0 auto;
+    width: 80%; 
+    margin-top: 20px; 
+    margin-bottom: 20px;
+    padding: 10px; 
+}
+
+th, td {
+    border: 1px solid rgb(4, 105, 108);
+    padding: 5px;
+    font-size: 14px;
+}
+
+tr:nth-child(odd) {
+    background-color: #B9DCD6; /* Cor de fundo das linhas ímpares */
+}
+
+th:nth-child(1) {
+    width: 50%;
+}
+
+tr:hover {
+    background: rgb(114, 187, 198); /* Cor de fundo ao passar o mouse */
+}
+
+/* Estilo do botão de fechar */
+.close {
+    background-color: #f38b8b; 
+    border-color: #f38b8b;
+    color: #ffffff; 
+    cursor: pointer;
+    font-size: 10px;
+    font-weight: bolder;
+}
+
+.close:hover {
+    color: #ff0202; 
+    font-weight: bolder;
+}
+
+/* Estilos para o footer */
+footer {
+    text-align: center;
+    padding: 20px 0;
+}
+
+#buttonContainer {
+    text-align: right; 
+}
+
+#backToTopButton {
+    /* Estilos específicos para o botão "Voltar ao Topo" */
+    font-size: 14px;
+}
+
+.copyright {
+    font-size: 12px; 
+    color: #012e55; 
+}
+
+.social-media {
+    margin-top: 10px;
+    font-size: 12px; 
+}
+
+.social-media a {
+    text-decoration: none;
+    margin: 0 10px;
+    color: #002aff; 
+}
+
+.social-media a:hover {
+    text-decoration: underline; 
+}
+
